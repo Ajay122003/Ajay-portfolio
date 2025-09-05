@@ -1,290 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajay protofilo</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container flex-lg-column">
+      <a class="navbar-brand mb-lg-4 mx-lg-auto" href="#">
+        <span class="h3 fw-bold d-block d-lg-none">Ajay E</span>
+        <img src="image/Ajay E.jpg" alt="Ajay" class="d-none d-lg-block rounded-circle" style="width: 180px;height: 200px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+          <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#edu">Education & Intern</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#Projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <div id="content-wrapper">
+  <section id="about" class=" full-page  px-lg-5">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-10 ">
+          <h1 class="fw-bold" data-aos="fade-up">
+            I'M A <span class="text-brand">FULLSTACK DEVELOPER</span> FROM COIMBATORE, INDIA
+          </h1>
+          <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="400">
+           Hello! I'm E. Ajay, Aspiring Full Stack Developer with strong knowledge in React.js, JavaScript, Python, and modern web technologies. Passionate about building real-time, responsive web applications and eager to contribute to dynamic development teams. Seeking an entry-level role where I can apply my skills, learn from industry experts, and grow as a versatile developer.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="700">
+            <a href="image/AJAY NEW RESUME.pdf" download="Ajay_CV.pdf" class=" btn btn-brand btn-custom me-3">Download My CV</a>
+            <a href="tel:+919342198948" class=" btn-custom ">Call: +91 9342198948</a>
+          </div>
+          <div class="mt-3 " data-aos="fade-up" data-aos-delay="1000">
+            <a href="www.linkedin.com/in/ajay-e9342198948" target="_blank" class=" btn btn-brand btn-custom me-3 "><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Ajay122003" target="_blank" class=" btn btn-brand btn-custom me-3 "><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
     
+  </section>
 
- <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-
-        <div class="container flex-lg-column ">
-          <a class="navbar-brand mb-lg-4 mx-lg-auto " href="#">
-            <span class="h3 fw-bold d-block d-lg-none ">Ajay E</span>
-            <img data-aos="fade-up" src="image/Ajay E.jpg" class="d-none d-lg-block img-border rounded"style="width: 150px;height: 200px;">
-        </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#edu">Education & Intern</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#Projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#skills">skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#certifications">Certifications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#contact">Contact</a>
-              </li>
+  <!-- Education & Internship -->
+  <section id="edu" class=" full-page px-3 px-lg-5">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-6">
+          <h3 class="mb-4 text-brand" data-aos="fade-right">Education</h3>
+          <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
+            <h4>Adithya Institute of Technology</h4>
+            <h6 >B.E - Electronics and Communication Engineering (2021-2025)</h6>
+            <p><strong>CGPA:</strong> 8.53</p>
+          </div>
+          <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
+            <h4>St Francis Higher Secondary School</h4>
+            <h6>Higher Secondary (2020-2021)</h6>
+            <p><strong>Percentage:</strong> 80%</p>
+          </div>
+          <div class="bg-edu p-4 rounded-4 shadow-effect">
+            <h4>St Francis Higher Secondary School</h4>
+            <h6>SSLC (2019-2020)</h6>
+            <p><strong>Percentage:</strong> 75%</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="mb-4 text-brand" data-aos="fade-right">Internship</h3>
+          <div class="bg-edu p-4 rounded-4 shadow-effect">
+            <h4>NoviTech Private Limited</h4>
+            <ul class="list-unstyled mb-0">
+              <li><strong>Domain:</strong> Web Development</li>
+              <li><strong>Duration:</strong> 4 Weeks</li>
+              <li><strong>Year:</strong> 2024</li>
             </ul>
           </div>
         </div>
-      </nav>
-
-<div id="content-wrapper">
-<!--about-->
-
-       <section id="about"  class="full-page px-lg-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10">
-                        <h1 class="fw-bold" data-aos="fade-up">I'M A <span class="text-brand">FULLSTACK DEVELOPER </span>FROM COIMBATORE, INDIA</h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="400">
-                            Hello! I'm E. Ajay, Aspiring Full Stack Developer with strong knowledge in React.js, JavaScript, Python, and modern web technologies. Passionate about building real-time, responsive web applications and eager to contribute to dynamic development teams. Seeking an entry-level role where I can apply my skills, learn from industry experts, and grow as a versatile developer.
-                        </p>
-                        <div data-aos="fade-up" data-aos-delay="700" >
-                        <a href="image/AJAY E.pdf" download="Ajay CV.pdf" class="btn btn-brand btn-custom me-3 ">
-                        Download My CV
-                        </a>
-                        <a href="#" class="btn-custom">Call: +91 9342198948</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-<!--Education-->
-
-    <section id="edu" class="full-page px-lg-5">
-          <div class="container">
-              <div class="row gy-5">
-                  <div class="col-lg-6">
-                      <h3 class="mb-4  text-brand" data-aos="fade-right" data-aos-delay="300">Education</h3>
-                      <div class="row gy-4">
-                          <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                              <div class="bg-edu p-4 rounded-4 shadow-effect">
-                                <h4>Adithya institute of technology</h4>
-                                <h6>B.E-Electronic and communication Enginerring-(2021-2025)</h6>
-                                <p>CGPA-8.53</p>  
-                              </div>
-                          </div>
-                          <div class="col-12" data-aos="fade-up" data-aos-delay="700">
-                              <div class="bg-edu p-4 rounded-4 shadow-effect">
-                                 <h4>St Francis Higher Secondary School</h4>
-                                 <h6>Higher Secondary-(2020-2021)</h6>
-                                 <p>Percentage: 80%</p> 
-                              </div>
-                          </div>
-                          <div class="col-12" data-aos="fade-up" data-aos-delay="800">
-                              <div class="bg-edu p-4 rounded-4 shadow-effect">
-                                <h4>St Francis Higher Secondary School</h4>
-                                <h6>SSLC-(2019-2020)</h6>
-                                <p>Percentage: 75%</p>  
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6">
-                      <h3 class="mb-4 text-brand" data-aos="fade-right" data-aos-delay="300">Internship</h3>
-                      <div class="row gy-4">
-                          <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                              <div class="bg-edu p-4 rounded-4 shadow-effect">
-                               <h4>NoviTech Private Limited</h4>
-                               <p class="m-0">Domain: Web Development</p>
-                               <p class="m-0">Duration : 4 weeks</p>
-                               <p class="m-0" >Year : 2024</p>  
-                              </div>
-                          </div>  
-                       </div>
-                  </div>
-              </div>
-          </div>
-      </section> 
-
-<!--project-->
-       <section id="Projects" class="full-page px-lg-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up">
-                     
-            <div class="col">
-              <h6 class="text-brand">MY WORK</h6>
-              <h2 class="mt-3 ">Projects</h2>
-            </div>
-          </div>
-          <div class="row gy-4">
-            <div class="col-lg-6  ">
-              <div class=" card-bg rounded-4">
-                <img src="image/Ajay E.jpg" alt="" class="img-fluid rounded-4 h-50">
-                <h3>project 1</h3>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class=" card-bg rounded-4">
-                <img src="image/Ajay E.jpg" alt="" class="img-fluid rounded-4">
-                <h3>Project2</h3>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class=" card-bg rounded-4">
-                <img src="image/Ajay E.jpg" alt="" class="img-fluid rounded-4">
-                <h3>Project3</h3>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </section> 
-
-    
-
-
-<!--skill-->
-      <section id="skills" class="full-page px-lg-5">
-        <div class="container">
-          <div class="row gy-3">
-            <!-- <div class="col-lg-6"> -->
-               <div class="row gy-2"  data-aos="fade-right" data-aos-delay="100"> 
-                <h4 class="text-brand">MY SKILLS</h4>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="200">
-                <div class="border-skill d-flex">
-                    <img src="image/html.png"  class="img-fluid  skill-img ">
-                    <h4>HTML</h4>
-                </div>  
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="300">
-                <div class="border-skill d-flex">
-                  <img src="image/css.png"  class="img-fluid skill-img">
-                <h4>CSS</h4>
-                    
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="400">
-                <div class="border-skill d-flex">
-                   <img src="image/java-script.png"  class="img-fluid skill-img">
-                   <h4>JavaScript</h4>
-                    
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="500">
-                <div  class="border-skill d-flex">
-                    <img src="image/bootstrap.png"  class="img-fluid skill-img">
-                    <h4>Bootstrap</h4>
-                   
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="600">
-                <div  class="border-skill d-flex">
-                   <img src="image/react.png"  class="img-fluid skill-img">
-                   <h4>React</h4>
-                  
-                </div>
-              </div>
-
-            <!-- </div> -->
-            <!-- <div class="col-lg-6"> -->
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="700">
-                <div  class="border-skill d-flex">
-                  <img src="image/node.png"  class="img-fluid skill-img">
-                  <h4>Node.js</h4>
-                    
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="800">
-                <div  class="border-skill d-flex">
-                  <img src="image/java.png"  class="img-fluid skill-img">
-                  <h4>Java</h4>
-                   
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12" data-aos="fade-up-left" data-aos-delay="900">
-                <div  class="border-skill d-flex">
-                   <img src="image/python.png"  class="img-fluid skill-img">
-                   <h4>Python</h4>
-                    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-  
-<!--contact-->
-
-<div id="content-wrapper">
-     <section id="contact" class="full-page px-lg-5">
-    <div class="container">
-    <div class="row">
-      <!-- Left Side Info -->
-      <div class="col-md-6 contact-info">
-        <h1>let’s do something awesome</h1>
-        <div class="info-block">
-          <h3> Address</h3>
-          <p>coimbatore,tamil nadu</p>
-        </div>
-        <div class="info-block">
-          <h3> Phone & Email</h3>
-          <p>(+91) 9342198948</p>
-          <p>ajayelango54@gmail.com</p>
-        </div>
-      </div>
-
-      
-      <div class="col-md-6 contact-form">
-        <h2>Hey, how about we catch up over coffee and have a chat?</h2>
-        <form action="#" method="POST">
-          <input type="text" name="fullname" placeholder="Full Name*" required>
-          <input type="email" name="email" placeholder="Email*" required>
-          <input type="text" name="mobile" placeholder="Mobile*" required>
-          <textarea name="details" rows="5" placeholder="Write Project Details*" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
       </div>
     </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects" class=" full-page px-3 px-lg-5" >
+    <div class="container">
+      <h2 class="text-brand mb-4" data-aos="fade-right">Projects</h2>
+      <div class="row gy-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-bg p-3 rounded-4 shadow-effect ">
+            <img src="image/Project1.jpg" class="img-fluid rounded-4 mb-3" alt="Project 1">
+            <h5>Project 1</h5>
+            <strong><a href="">Visit project in github</a></strong>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-bg p-3 rounded-4 shadow-effect ">
+            <img src="image/Project2.jpg" class="img-fluid rounded-4 mb-3" alt="Project 2">
+            <h5>Project 2</h5>
+            <strong><a href="">Visit project in github</a></strong>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-bg p-3 rounded-4 shadow-effect ">
+            <img src="image/Project1.jpg" class="img-fluid rounded-4 mb-3" alt="Project 3">
+            <h5>Project 3</h5>
+            <strong><a href="">Visit project in github</a></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class=" full-page px-3 px-lg-5" >
+    <div class="container">
+      <h2 class="text-brand mb-4" data-aos="fade-right">My Skills</h2>
+      <div class="row gy-3">
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/html.png" class="skill-img">
+            <h5>HTML</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/css.png" class="skill-img">
+            <h5>CSS</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/java-script.png" class="skill-img">
+            <h5>JavaScript</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/bootstrap.png" class="skill-img">
+            <h5>Bootstrap</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/react.png" class="skill-img">
+            <h5>React</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/node.png" class="skill-img">
+            <h5>Node.js</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/java.png" class="skill-img">
+            <h5>Java</h5>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
+            <img src="image/python.png" class="skill-img">
+            <h5>Python</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- certifications -->
+       <section id="certifications" class="full-page px-lg-5" >
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row pb-4" data-aos="fade-right">
+      <div class="col-lg-8">
+        <h6 class="text-brand">Certification</h6>
+        <h1>My Certificate and Achievement</h1>
+      </div>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="row gy-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3 rounded-4 shadow-effect ">
+          <img src="image/certificate1.jpg" class="img-fluid rounded-4 mb-3" alt="Project 1">
+          <h6 class="text-brand">APR 2024</h6>
+          <h4>Internet of Things</h4>
+          <h5>Novitech private limited</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3 rounded-4 shadow-effect ">
+          <img src="image/certificate2.jpg" class="img-fluid rounded-4 mb-3" alt="Project 1">
+          <h6 class="text-brand">JUN 2024</h6>
+          <h4>Internet of Things & Robotics</h4>
+          <h5>Rinex technologies</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3 rounded-4 shadow-effect ">
+          <img src="image/certificate3.jpg" class="img-fluid rounded-4 mb-3" alt="Project 1">
+          <h6 class="text-brand">FEB 2024</h6>
+          <h4>Connecting device with cloud-workshop</h4>
+          <h5>Novitech private limited</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3 rounded-4 shadow-effect ">
+          <img src="image/certificate4.jpg" class="img-fluid rounded-4 mb-3" alt="Project 1">
+          <h6 class="text-brand">JULY 2025</h6>
+          <h4>Frondend workshop</h4>
+          <h5>Skyy Skill</h5>
+        </div>
+      </div>
+      <!-- Repeat for other certificates -->
+    </div>
+
   </div>
 </section>
 
-</div>
+      <!-- certifications -->
 
-</div>
-  
+  <!-- Contact -->
+  <section id="contact" class=" full-page px-3 px-lg-5">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-6">
+          <h2 class="text-brand">Let’s do something awesome</h2>
+          <p><strong>Address:</strong> Coimbatore, Tamil Nadu</p>
+          <p><strong>Phone:</strong> +91 9342198948</p>
+          <p><strong>Email:</strong> ajayelango54@gmail.com</p>
+        </div>
+        <div class="col-lg-6">
+          <h3>Hey, how about we catch up over coffee and have a chat?</h3>
+          <form class="contact-form" action="https://formspree.io/f/mandlelq" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="mobile" placeholder="Mobile" required>
+            <textarea name="details" rows="5" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  </div>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
