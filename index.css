@@ -5,7 +5,7 @@
     --color-3: #E1DBBE;
     --color-4: #B44636;
     --color-5: #3F4F44;
-    --color-6: #D9D9D9;
+    --color-6: #CBCBCB;
     --color-7: #893C0E;
     --sidebar-w: 250px;
 
@@ -29,7 +29,7 @@
     }
 }
   .full-page {
-    background-color:var(--color-3);
+    background-color:#EEEEEE;
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -72,62 +72,6 @@
 
 
   
-    .contact-info, .contact-form {
-        flex: 1;
-        padding: 20px;
-        min-width: 300px;
-    }
-    .contact-info h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
-        font-weight: 700;
-        color: var(--color-4);
-    }
-    .info-block {
-        margin-bottom: 30px;
-    }
-    .info-block h3 {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
-    .info-block p {
-        font-size: 16px;
-        margin: 0;
-    }
-    .contact-form h2 {
-        font-size: 22px;
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-    form input, form textarea {
-        width: 100%;
-        padding: 12px;
-        background: transparent;
-        border: 1px solid var(--color-4);
-        border-radius: 8px;
-        color:black;
-        margin-bottom: 15px;
-        font-size: 14px;
-        outline: none;
-    }
-    form input:focus, form textarea:focus {
-        border-color:var(--color-4);
-    }
-    form button {
-        padding: 12px 25px;
-        border: none;
-        background:  var(--color-5);
-        color: #000;
-        border-radius: 6px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    form button:hover {
-        background:  var(--color-4);
-    }
-
 
 
 
@@ -226,3 +170,10 @@
 .btn-custom:active {
     animation: clickPulse 0.3s ease;
 }
+
+  .profile-img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 1rem rgba(255,87,34,0.5);
+    }
+
+
