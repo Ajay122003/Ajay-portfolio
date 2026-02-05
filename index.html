@@ -27,7 +27,10 @@
   </a>
 
   <h4 class="mt-2 mb-1 fw-bold fade-in delay-1">Ajay E</h4>
-  <small class="d-block text-white-50 mb-3 fade-in delay-1">Python full stack Developer</small>
+   <small class="d-block text-white-50 mb-3">
+  <span id="typing-text"></span>
+</small>
+
 
   <ul class="nav nav-pills flex-column w-100 gap-1 mb-3">
     <li class="nav-item"><a class="nav-link fw-semibold px-3 " href="#about">About</a></li>
@@ -123,6 +126,19 @@
 
   window.addEventListener('scroll', onScroll, {passive:true});
   document.addEventListener('DOMContentLoaded', onScroll);
+
+  const text = "Python Full Stack Developer";
+let index = 0;
+
+function typeEffect(){
+  if(index < text.length){
+    document.getElementById("typing-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 80);
+  }
+}
+
+typeEffect();
 </script>
 
   <!-- About -->
@@ -161,7 +177,7 @@
           <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
             <h4><i class="bi bi-mortarboard me-3"></i>Adithya Institute of Technology</h4>
             <h6 class="text-brand">B.E - Electronics and Communication Engineering (2021-2025)</h6>
-            <p><strong>CGPA:</strong> 8.53</p>
+            <p><strong>CGPA:</strong> 7.25</p>
           </div>
           <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
             <h4><i class="bi bi-mortarboard me-3"></i>St Francis Higher Secondary School</h4>
