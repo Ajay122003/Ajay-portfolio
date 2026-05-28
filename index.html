@@ -1,442 +1,456 @@
+dex · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajay Portfolio</title>
-  <link rel="stylesheet" href="index.css">
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-  <!-- AOS Animation -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay E — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="index.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-
-
-
-<!--navbar-->
-
-<!-- Put this inside <body> near top -->
-<!-- Fixed sidebar for large screens -->
-<nav class="sidebar d-none d-lg-flex flex-column align-items-center text-center" aria-label="Main sidebar">
-  <a href="#" class="mb-3 mt-1 fade-in">
-    <img src="image/Ajay E.jpeg" alt="Ajay E" class="profile-img" />
+<body>
+ 
+<!-- MOBILE NAV -->
+<nav class="mobile-nav">
+  <span class="brand">Ajay E.</span>
+  <button class="hamburger" id="hamburgerBtn"><i class="bi bi-list"></i></button>
+</nav>
+<div class="offcanvas-overlay" id="overlay"></div>
+<div class="offcanvas-custom" id="mobileMenu">
+  <button class="close-btn" id="closeMenu"><i class="bi bi-x"></i></button>
+  <div style="clear:both;margin-bottom:1.5rem">
+    <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff">Ajay E</div>
+    <div style="font-size:.75rem;color:rgba(255,255,255,.6)">Full Stack Developer</div>
+  </div>
+  <a href="#about">About</a>
+  <a href="#edu">Education</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+  <a href="image/AJAY E new resume.pdf" download style="margin-top:1rem;background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem 1rem;text-align:center;border:none">
+    <i class="bi bi-download me-2"></i>Download CV
   </a>
-
-  <h4 class="mt-2 mb-1 fw-bold fade-in delay-1">Ajay E</h4>
-   <small class="d-block text-white-50 mb-3">
-  <span id="typing-text"></span>
-</small>
-
-
-  <ul class="nav nav-pills flex-column w-100 gap-1 mb-3">
-    <li class="nav-item"><a class="nav-link fw-semibold px-3 " href="#about">About</a></li>
-    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#edu">Education & Intern</a></li>
-    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#Projects">Projects</a></li>
-    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#skills">Skills</a></li>
-    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#certifications">Certifications</a></li>
-    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#contact">Contact</a></li>
-  </ul>
-
-
-</nav>
-
-<!-- Top navbar + offcanvas for mobile -->
-<nav class="navbar   shadow-sm d-lg-none fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <img src="image/Ajay E.jpeg" alt="Ajay small" style="width:42px;height:42px;border-radius:50%;">
-      <span class="fw-bold">Ajay E</span>
-    </a>
-
-    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list fs-4"></i>
-    </button>
-
-    <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-      <div class="offcanvas-header">
-        <h5 id="mobileMenuLabel" class="offcanvas-title">Ajay E</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="nav nav-pills flex-column gap-2">
-          <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#edu" data-bs-dismiss="offcanvas">Education & Intern</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Projects" data-bs-dismiss="offcanvas">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certifications" data-bs-dismiss="offcanvas">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
-        </ul>
-
-        <hr>
-        <a class="btn btn-warning w-100 mb-2" href="image/Ajay E (resume).pdf" download>Download Resume</a>
-        <div class="d-flex gap-2">
-          <a class="btn btn-outline-secondary w-100" href="https://github.com/Ajay122003" target="_blank">GitHub</a>
-          <a class="btn btn-outline-primary w-100" href="www.linkedin.com/in/ajay-e9342198948" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-  
-
 </div>
-
-<!-- Put this before </body> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Smooth scrolling for anchor links (works for both sidebar and offcanvas)
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', function(e){
-      const targetId = this.getAttribute('href');
-      if(!targetId || targetId === '#') return;
-      const target = document.querySelector(targetId);
-      if(target){
-        e.preventDefault();
-        const yOffset = window.innerWidth < 992 ? 10 : 20; // small offset on mobile
-        const y = target.getBoundingClientRect().top + window.pageYOffset - yOffset;
-        window.scrollTo({top: y, behavior: 'smooth'});
-        // set focus for accessibility after arriving
-        setTimeout(()=> target.setAttribute('tabindex','-1'), 600);
-      }
-    });
-  });
-
-  // Active link highlighting on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.sidebar .nav-link, .offcanvas .nav-link');
-
-  function onScroll(){
-    const scrollPos = window.scrollY + (window.innerHeight/6);
-    sections.forEach(sec=>{
-      const top = sec.offsetTop;
-      const bottom = top + sec.offsetHeight;
-      const id = '#'+sec.id;
-      navLinks.forEach(link=>{
-        if(link.getAttribute('href') === id){
-          link.classList.toggle('active', scrollPos >= top && scrollPos < bottom);
-        }
-      });
-    });
-  }
-
-  window.addEventListener('scroll', onScroll, {passive:true});
-  document.addEventListener('DOMContentLoaded', onScroll);
-
-  const text = "Python Full Stack Developer";
-let index = 0;
-
-function typeEffect(){
-  if(index < text.length){
-    document.getElementById("typing-text").innerHTML += text.charAt(index);
-    index++;
-    setTimeout(typeEffect, 80);
-  }
-}
-
-typeEffect();
-</script>
-
-  <!-- About -->
-  <div id="content-wrapper">
-  <section id="about" class=" full-page  px-lg-5">
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-10 ">
-          <h1 class="fw-bold" data-aos="fade-up">
-            I'M A <span class="text-brand">FULLSTACK DEVELOPER</span> FROM COIMBATORE, INDIA
-          </h1>
-          <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="400">
-           Hello! I'm E. Ajay, Aspiring Full Stack Developer with strong knowledge in React.js, JavaScript, Python, Django and modern web technologies. Passionate about building real-time, responsive web applications and eager to contribute to dynamic development teams. Seeking an entry-level role where I can apply my skills, learn from industry experts, and grow as a versatile developer.
-          </p>
-          <div data-aos="fade-up" data-aos-delay="700">
-            <a href="image/Ajay E (resume).pdf" download="Ajay_CV.pdf" class=" btn btn-brand btn-custom me-3">Download My CV</a>
-            <a href="tel:+919342198948" class=" btn-custom ">Call: +91 9342198948</a>
+ 
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-avatar">
+    <img src="image/Ajay E.jpeg" alt="Ajay E" class="profile-img" />
+  </div>
+  <h3>Ajay E</h3>
+  <small>Coimbatore, India</small>
+  <div style="text-align:center;margin-bottom:1.2rem;min-height:20px">
+    <span id="typing-text" style="color:rgba(255,255,255,.8);font-size:.82rem"></span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#about"><i class="bi bi-person"></i>About</a>
+    <a href="#edu"><i class="bi bi-mortarboard"></i>Education</a>
+    <a href="#projects"><i class="bi bi-grid-3x3-gap"></i>Projects</a>
+    <a href="#skills"><i class="bi bi-code-slash"></i>Skills</a>
+    <a href="#certifications"><i class="bi bi-award"></i>Certifications</a>
+    <a href="#contact"><i class="bi bi-envelope"></i>Contact</a>
+  </nav>
+  <div class="sidebar-socials">
+    <a href="https://github.com/Ajay122003" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/ajay-e9342198948" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="tel:+919342198948"><i class="bi bi-telephone"></i></a>
+    <a href="mailto:ajayelango54@gmail.com"><i class="bi bi-envelope"></i></a>
+  </div>
+  <a href="image/AJAY E new resume.pdf" download class="sidebar-resume">
+    <i class="bi bi-download"></i>Resume
+  </a>
+</nav>
+ 
+<!-- MAIN CONTENT -->
+<main class="main">
+ 
+<!-- ── HERO / ABOUT ── -->
+<section id="about">
+  <div class="container-fluid px-0">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <!-- <div class="hero-chip"><span></span>Available for opportunities</div> -->
+        <h1 class="hero-title reveal">
+          Full Stack<br><span class="accent">Developer</span><br>
+        </h1>
+        <p class="hero-desc reveal delay-1">
+          Enthusiastic Full Stack Developer with hands-on experience in building scalable web applications using 
+          React.js, Django, and REST APIs. Skilled in developing CRM systems, implementing role-based access control, 
+          and integrating AI-driven MCP servers. Passionate about creating efficient, user-focused solutions.
+        </p>
+        <div class="d-flex flex-wrap gap-3 reveal delay-2">
+          <a href="image/AJAY E new resume.pdf" download class="btn-primary-custom">
+            <i class="bi bi-download"></i>Download CV
+          </a>
+          <a href="#contact" class="btn-outline-custom">
+            <i class="bi bi-chat-dots"></i>Let's Talk
+          </a>
+        </div>
+        <div class="hero-stats reveal delay-3">
+          <div>
+            <div class="hero-stat-num">5+</div>
+            <div class="hero-stat-label">Projects Built</div>
           </div>
-
-          <div class="mt-3 " data-aos="fade-up" data-aos-delay="1000">
-            <a href="www.linkedin.com/in/ajay-e9342198948" target="_blank" class=" btn btn-brand btn-custom me-3 "><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/Ajay122003" target="_blank" class=" btn btn-brand btn-custom me-3 "><i class="bi bi-github"></i></a>
+          <div>
+            <div class="hero-stat-num">10+</div>
+            <div class="hero-stat-label">Skills Mastered</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">3+</div>
+            <div class="hero-stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 reveal-right">
+        <!-- AI ASSISTANT CARD -->
+        <div class="ai-box">
+          <div class="ai-header">
+            <div class="ai-avatar-sm">AI</div>
+            <div>
+              <div class="ai-label">Ask about Ajay</div>
+              <div class="ai-sub">Powered by Claude AI</div>
+            </div>
+            <i class="bi bi-circle-fill ms-auto" style="color:#4ade80;font-size:.5rem"></i>
+          </div>
+          <div class="ai-chat-area" id="chatArea">
+            <div class="ai-msg bot">
+              Hi! 👋 I'm Ajay's AI assistant. Ask me anything about his skills, projects, or experience!
+            </div>
+          </div>
+          <div class="ai-chips" id="quickChips">
+            <span class="ai-chip" data-q="What are Ajay's main skills?">Skills</span>
+            <span class="ai-chip" data-q="Tell me about Ajay's projects">Projects</span>
+            <span class="ai-chip" data-q="What is Ajay's education background?">Education</span>
+            <span class="ai-chip" data-q="Is Ajay available for hire?">Availability</span>
+          </div>
+          <div class="ai-input-row">
+            <input class="ai-input" id="aiInput" type="text" placeholder="Ask about Ajay…">
+            <button class="ai-send" id="aiSend"><i class="bi bi-send-fill"></i></button>
           </div>
         </div>
       </div>
     </div>
-    
-  </section>
-
-  <!-- Education & Internship -->
-  <section id="edu" class=" full-page px-3 px-lg-5">
-    <div class="container">
-      <div class="row gy-5">
-        <div class="col-lg-6">
-          <h3 class="mb-4 text-brand" data-aos="fade-right">Education</h3>
-          <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
-            <h4><i class="bi bi-mortarboard me-3"></i>Adithya Institute of Technology</h4>
-            <h6 class="text-brand">B.E - Electronics and Communication Engineering (2021-2025)</h6>
-            <p><strong>CGPA:</strong> 7.25</p>
-          </div>
-          <div class="bg-edu p-4 rounded-4 shadow-effect mb-3">
-            <h4><i class="bi bi-mortarboard me-3"></i>St Francis Higher Secondary School</h4>
-            <h6 class="text-brand">Higher Secondary (2020-2021)</h6>
-            <p><strong>Percentage:</strong> 80%</p>
-          </div>
-          <div class="bg-edu p-4 rounded-4 shadow-effect">
-            <h4><i class="bi bi-mortarboard me-3"></i>St Francis Higher Secondary School</h4>
-            <h6 class="text-brand">SSLC (2019-2020)</h6>
-            <p><strong>Percentage:</strong> 75%</p>
+  </div>
+</section>
+ 
+<!-- ── EDUCATION & INTERNSHIP ── -->
+<section id="edu">
+  <div class="container-fluid px-0">
+    <div class="section-tag reveal">Background</div>
+    <h2 class="section-title reveal delay-1">Education &amp; <span>Experience</span></h2>
+    <p class="section-sub reveal delay-2">Academic foundations and hands-on experience that shaped my skills.</p>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h5 style="font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:1.5rem" class="reveal">🎓 Education</h5>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-card">
+            <span class="badge-year">2021 – 2025</span>
+            <h5>Adithya Institute of Technology</h5>
+            <p>B.E – Electronics &amp; Communication Engineering</p>
+            <p style="margin-top:.3rem"><strong>CGPA:</strong> 7.25</p>
           </div>
         </div>
-        <div class="col-lg-6">
-          <h3 class="mb-4 text-brand" data-aos="fade-right">Internship</h3>
-          <div class="bg-edu p-4 rounded-4 shadow-effect">
-            <h4>NoviTech Private Limited</h4>
-            <ul class="list-unstyled mb-0">
-              <li><strong>Domain:</strong> Web Development</li>
-              <li><strong>Duration:</strong> 4 Weeks</li>
-              <li><strong>Year:</strong> 2024</li>
-            </ul>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-card">
+            <span class="badge-year">2020 – 2021</span>
+            <h5>St Francis Higher Secondary School</h5>
+            <p>Higher Secondary Education</p>
+            <p style="margin-top:.3rem"><strong>Percentage:</strong> 80%</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-card">
+            <span class="badge-year">2018 – 2019</span>
+            <h5>St Francis Higher Secondary School</h5>
+            <p>SSLC (10th Grade)</p>
+            <p style="margin-top:.3rem"><strong>Percentage:</strong> 82%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h5 style="font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:1.5rem" class="reveal">💼 Internship</h5>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-card">
+            <span class="badge-year">2024</span>
+            <h5>Python Full Stack Developer Intern</h5>
+            <p>CareerLadder Institute</p>
+            <p style="margin-top:.4rem;color:var(--muted);font-size:.82rem;line-height:1.6">
+              Developed and maintained full-stack web applications using Python, Django, React.js and MySQL. Collaborated with senior developers on real-world client projects.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-card">
+            <span class="badge-year">Apr 2024</span>
+            <h5>IoT Workshop Trainee</h5>
+            <p>Novitech Pvt. Limited</p>
+            <p style="margin-top:.4rem;color:var(--muted);font-size:.82rem;line-height:1.6">
+              Hands-on training with Internet of Things hardware, cloud connectivity, and sensor data processing.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="Projects" class=" full-page px-3 px-lg-5" >
-    <div class="container">
-      <h2 class="text-brand mb-4" data-aos="fade-right">Projects</h2>
-      <div class="row gy-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card-bg p-3 rounded-4 shadow-effect ">
-            <img src="image/Project1.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
+  </div>
+</section>
+ 
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="container-fluid px-0">
+    <div class="section-tag reveal">Work</div>
+    <h2 class="section-title reveal delay-1">Featured <span>Projects</span></h2>
+    <p class="section-sub reveal delay-2">Real-world applications I've designed and built from scratch.</p>
+    <div class="row g-4">
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-1">
+        <div class="proj-card">
+          <div class="proj-cover" style="background:linear-gradient(135deg,#7C2D12,#C2410C)">
+             <img src="image/Project1.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
+          </div>
+          <div class="proj-body">
+            <div class="proj-tag">Bootstrap · React </div>
             <h5>Smart Restaurant Ordering System</h5>
-            <strong><a href="https://github.com/Ajay122003/Smart-Restaurant-Ordering-System">Visit project in github</a></strong>
+            <p>Real-time digital menu and order management system. Customers can browse, order, and track their meals with a responsive interface.</p>
+            <a href="https://github.com/Ajay122003/Smart-Restaurant-Ordering-System" target="_blank" class="proj-link">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-bg p-3 rounded-4 shadow-effect ">
-            <img src="image/Project2.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 2">
-            <h5>Fashion E-commerce</h5>
-            <strong><a href="">Visit project in github</a></strong>
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-2">
+        <div class="proj-card">
+          <div class="proj-cover" style="background:linear-gradient(135deg,#B45309,#D97706)">
+             <img src="image/Project2.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 2">
+          </div>
+          <div class="proj-body">
+            <div class="proj-tag">JavaScript · HTML · CSS</div>
+            <h5>Fashion E-commerce Platform</h5>
+            <p>Modern online fashion store with product catalogue, cart management, filter &amp; search, and responsive mobile-first design.</p>
+            <a href="#" class="proj-link">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-bg p-3 rounded-4 shadow-effect ">
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-3">
+        <div class="proj-card">
+          <div class="proj-cover" style="background:linear-gradient(135deg,#991B1B,#B45309)">
             <img src="image/Project3.png" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 3">
+          </div>
+          <div class="proj-body">
+            <div class="proj-tag">Python ·  Django REST Framework ·  React.js ·  Bootstrap · JavaScript</div>
             <h5>BloodLink: Blood Bank Finder</h5>
-            <strong><a href="https://github.com/Ajay122003/BloodLink-Blood-Bank-Finder">Visit project in github</a></strong>
+            <p>Location-based blood bank search app with real-time availability, filtering by blood group, and contact info display.</p>
+            <a href="https://github.com/Ajay122003/BloodLink-Blood-Bank-Finder" target="_blank" class="proj-link">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-bg p-3 rounded-4 shadow-effect ">
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-1">
+        <div class="proj-card">
+          <div class="proj-cover" style="background:linear-gradient(135deg,#1D4ED8,#3B82F6)">
             <img src="image/Project4.png" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 3">
-            <h5>OOPS-Programs</h5>
-            <strong><a href="https://github.com/Ajay122003/Python-OOPs-Programs">Visit project in github</a></strong>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tag">Python · OOP</div>
+            <h5>Python OOPs Programs</h5>
+            <p>Comprehensive collection of Object-Oriented Programming exercises covering classes, inheritance, polymorphism, and encapsulation.</p>
+            <a href="https://github.com/Ajay122003/Python-OOPs-Programs" target="_blank" class="proj-link">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-bg p-3 rounded-4 shadow-effect ">
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-2">
+        <div class="proj-card">
+          <div class="proj-cover" style="background:linear-gradient(135deg,#065F46,#10B981)">
             <img src="image/Project5.png" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 3">
-            <h5>Task Management system</h5>
-            <strong><a href="https://github.com/Ajay122003/Task-Management-System">Visit project in github</a></strong>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tag">Django  · MySQL</div>
+            <h5>Task Management System</h5>
+            <p>Full-featured project &amp; task tracker with user auth, deadlines, priorities, status tracking, and a clean dashboard UI.</p>
+            <a href="https://github.com/Ajay122003/Task-Management-System" target="_blank" class="proj-link">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class=" full-page px-3 px-lg-5" >
-    <div class="container">
-      <h2 class="text-brand mb-4" data-aos="fade-right"> <i class="bi bi-file-code-fill skill-icon me-2"></i>My Skills</h2>
-      <div class="row gy-3">
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/html.png" class="skill-img">
-            <h5>HTML</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/css.png" class="skill-img">
-            <h5>CSS</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/java-script.png" class="skill-img">
-            <h5>JavaScript</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/bootstrap.png" class="skill-img">
-            <h5>Bootstrap</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/react.png" class="skill-img">
-            <h5>React</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/node.png" class="skill-img">
-            <h5>Node.js</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/java.png" class="skill-img">
-            <h5>Java</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/python.png" class="skill-img">
-            <h5>Python</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/django.svg" class="skill-img">
-            <h5>Django</h5>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
-          <div class="border-skill d-flex align-items-center shadow-effect p-2 rounded">
-            <img src="image/sql.png" class="skill-img">
-            <h5>Mysql</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-   <!-- certifications -->
-       <section id="certifications" class="full-page px-lg-5" >
-  <div class="container">
-
-    <!-- Section Heading -->
-    <div class="row pb-4" data-aos="fade-right">
-      <div class="col-lg-8">
-        <h6 class="text-brand">Certification</h6>
-        <h1>My Certificate and Achievement</h1>
-      </div>
-    </div>
-
-    <!-- Certificates Grid -->
-    <div class="row gy-4">
-
-       <div class="col-md-6 col-lg-4">
-        <div class="card-bg p-3 rounded-4 shadow-effect ">
-          <img src="image/certificate5.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
-          <h6 class="text-black-50">May2025 - Aug2025</h6>
-          <h4 class="lead">Python Full stack Course</h4>
-          <h5 class="text-brand ">CareerLadder Institute</h5>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-bg p-3 rounded-4 shadow-effect ">
-          <img src="image/certificate1.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
-          <h6 class="text-black-50">APR 2024</h6>
-          <h4 class="lead">Internet of Things</h4>
-          <h5 class="text-brand">Novitech private limited</h5>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-bg p-3 rounded-4 shadow-effect ">
-          <img src="image/certificate2.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
-          <h6 class="text-black-50">JUN 2024</h6>
-          <h4 class="lead">Internet of Things & Robotics</h4>
-          <h5 class="text-brand">Rinex technologies</h5>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-bg p-3 rounded-4 shadow-effect ">
-          <img src="image/certificate3.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
-          <h6 class="text-black-50">FEB 2024</h6>
-          <h4 class="lead">Connecting device with cloud-workshop</h4>
-          <h5 class="text-brand">Novitech private limited</h5>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-bg p-3 rounded-4 shadow-effect ">
-          <img src="image/certificate4.jpg" class="img-fluid rounded-4 mb-3 profile-img" alt="Project 1">
-          <h6 class="text-black-50">JULY 2025</h6>
-          <h4 class="lead">Frondend workshop</h4>
-          <h5 class="text-brand ">Skyy Skill</h5>
-        </div>
-      </div>
-
-     
-      <!-- Repeat for other certificates -->
-    </div>
-
-  </div>
-</section>
-
-      <!-- certifications -->
-
-  <!-- Contact -->
-
-
-  <section id="contact" class="full-page px-3 px-lg-5 py-5 ">
-     
-  <div class="container">
-   
-    <div class="row gy-5 align-items-center">
-      
-      <!-- Contact Info -->
-      <div class="col-lg-6">
-        <h2 class="text-brand fw-bold display-5 mb-3">Let’s do something awesome</h2>
-        <!-- <hr class="mb-4" style="border-top: 3px solid #ff5722; width: 160px; margin-left:0;"> -->
-        <p class="lead"><strong>Address:</strong> Coimbatore, Tamil Nadu</p>
-        <p class="lead"><strong>Phone:</strong> +91 9342198948</p>
-        <p class="lead"><strong>Email:</strong> ajayelango54@gmail.com</p>
-      </div>
-      
-      <!-- Contact Form -->
-      <div class="col-lg-6">
-         
-        <h3 class="mb-4 fw-semibold text-dark">Hey, how about we catch up over coffee and have a chat?</h3>
-        <form class="contact-form shadow p-4 rounded-4 " action="https://formspree.io/f/mandlelq" method="POST">
-          <div class="mb-3">
-            <input type="text" name="fullname" class="form-control form-control-lg" placeholder="Full Name" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" required>
-          </div>
-          <div class="mb-3">
-            <input type="text" name="mobile" class="form-control form-control-lg" placeholder="Mobile" required>
-          </div>
-          <div class="mb-3">
-            <textarea name="details" rows="5" class="form-control form-control-lg" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-brand btn-lg w-100" style="background-color:#792A13; color:#fff;">Send Message</button>
-        </form>
-
-
-      </div>
-
+ 
     </div>
   </div>
 </section>
-
-
+ 
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="container-fluid px-0">
+    <div class="section-tag reveal">Expertise</div>
+    <h2 class="section-title reveal delay-1">My <span>Skills</span></h2>
+    <p class="section-sub reveal delay-2">Technologies and tools I work with to build complete applications.</p>
+    <div class="row g-3" id="skills-container"></div>
   </div>
-
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+ 
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="container-fluid px-0">
+    <div class="section-tag reveal">Achievements</div>
+    <h2 class="section-title reveal delay-1">Certifications &amp; <span>Awards</span></h2>
+    <p class="section-sub reveal delay-2">Continuous learning through verified courses and training programs.</p>
+    <div class="row g-3">
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-1">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <small>May 2025 – Aug 2025 · CareerLadder Institute</small>
+            <h6>Python Full Stack Course</h6>
+            <p>Complete training on Python, Django, React, and MySQL for full-stack development.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-2">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="bi bi-cpu"></i></div>
+          <div>
+            <small>Apr 2024 · Novitech Private Limited</small>
+            <h6>Internet of Things</h6>
+            <p>Hands-on IoT development with sensors, Arduino, and cloud integration.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-3">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="bi bi-robot"></i></div>
+          <div>
+            <small>Jun 2024 · Rinex Technologies</small>
+            <h6>IoT &amp; Robotics</h6>
+            <p>Combined training in robotics programming, automation systems, and IoT protocols.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-1">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="bi bi-cloud"></i></div>
+          <div>
+            <small>Feb 2024 · Novitech Private Limited</small>
+            <h6>Connecting Devices with Cloud</h6>
+            <p>Workshop on cloud infrastructure, device connectivity, and data streaming pipelines.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-6 col-xl-4 reveal delay-2">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="bi bi-layout-text-window"></i></div>
+          <div>
+            <small>Jul 2025 · Skyy Skill</small>
+            <h6>Frontend Workshop</h6>
+            <p>Advanced front-end development techniques with modern HTML, CSS, and JavaScript patterns.</p>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container-fluid px-0">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="section-tag reveal">Contact</div>
+        <h2 class="section-title reveal delay-1">Let's <span>Connect</span></h2>
+        <p style="color:var(--muted);font-size:.95rem;margin-bottom:2rem;line-height:1.8" class="reveal delay-2">
+          Looking for an enthusiastic full-stack developer to join your team? I'm open to full-time roles, internships, and freelance projects. Let's build something great together!
+        </p>
+        <div class="reveal delay-1">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>Coimbatore, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h6>Phone</h6>
+              <p>+91 9342198948</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h6>Email</h6>
+              <p>ajayelango54@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-3 mt-3 reveal delay-2">
+          <a href="https://github.com/Ajay122003" target="_blank" class="btn-primary-custom" style="padding:.6rem 1.2rem">
+            <i class="bi bi-github"></i>GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ajay-e9342198948" target="_blank" class="btn-outline-custom" style="padding:.6rem 1.2rem">
+            <i class="bi bi-linkedin"></i>LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="contact-form-card">
+          <h4 style="font-size:1.2rem;font-weight:800;margin-bottom:1.5rem">Send a Message</h4>
+          <form action="https://formspree.io/f/mandlelq" method="POST">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" name="fullname" class="form-control-custom" placeholder="Full Name" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" name="email" class="form-control-custom" placeholder="Email Address" required>
+              </div>
+              <div class="col-12">
+                <input type="text" name="mobile" class="form-control-custom" placeholder="Phone Number">
+              </div>
+              <div class="col-12">
+                <input type="text" name="subject" class="form-control-custom" placeholder="Subject">
+              </div>
+              <div class="col-12">
+                <textarea name="details" class="form-control-custom" placeholder="Your message..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100" style="justify-content:center;padding:.85rem">
+                  <i class="bi bi-send-fill"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+</main>
+ 
+<footer>
+  <p>Crafted with <span>♥</span> by <strong style="color:#fff">Ajay E</strong> · Full Stack Developer · Coimbatore, India</p>
+  <p style="margin-top:.4rem;font-size:.75rem">© 2025 Ajay E. All rights reserved.</p>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
