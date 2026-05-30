@@ -25,25 +25,23 @@ h1,h2,h3,h4,h5,h6{font-family:'Syne',sans-serif}
   border-right:3px solid rgba(255,255,255,.08);
 }
 .sidebar-avatar {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, .25);
+  border: 3px solid rgba(255,255,255,.25);
   margin-bottom: 1rem;
   flex-shrink: 0;
   overflow: hidden;
   transition: transform .3s ease, box-shadow .3s ease;
   cursor: default;
 }
-
+.sidebar-avatar:hover { transform: scale(1.06); box-shadow: 0 0 30px rgba(255,200,100,.25); }
 .sidebar-avatar .profile-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
-.sidebar-avatar:hover{transform:scale(1.06);box-shadow:0 0 30px rgba(255,200,100,.25)}
 .sidebar h3{font-size:1.15rem;font-weight:800;letter-spacing:.5px;margin-bottom:.2rem}
 .sidebar small{color:rgba(255,255,255,.6);font-size:.72rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:1.4rem;display:block}
 #typing-text{color:rgba(255,255,255,.85);font-size:.8rem}
@@ -267,6 +265,106 @@ section:nth-child(even){background:var(--surface)}
 .cert-card small{font-size:.75rem;color:var(--accent);font-weight:600}
 .cert-card p{font-size:.78rem;color:var(--muted);margin:0}
 
+/* ── WORK EXPERIENCE ── */
+.exp-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  gap: 1.2rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(124,45,18,.1);
+}
+.exp-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.exp-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(124,45,18,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.exp-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: .6rem;
+  border-radius: 2px;
+}
+.exp-body { flex: 1; }
+.exp-title {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--ink);
+}
+.exp-badge {
+  font-size: .68rem;
+  font-weight: 600;
+  padding: .2rem .65rem;
+  border-radius: 20px;
+  background: rgba(124,45,18,.1);
+  color: var(--rust);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.exp-company {
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: .4rem;
+}
+.exp-company i { margin-right: .3rem; }
+.exp-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: .78rem;
+  color: var(--muted);
+  margin-bottom: .8rem;
+}
+.exp-meta i { margin-right: .3rem; }
+.exp-points {
+  padding-left: 1.1rem;
+  margin-bottom: .8rem;
+}
+.exp-points li {
+  font-size: .85rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: .25rem;
+}
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.exp-tags span {
+  font-size: .72rem;
+  font-weight: 600;
+  padding: .25rem .7rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--cream);
+}
+@media (max-width: 576px) {
+  .exp-card { flex-direction: column; }
+  .exp-line { display: none; }
+}
+
 /* ── CONTACT ── */
 .contact-info-item{
   display:flex;align-items:center;gap:1rem;
@@ -355,6 +453,3 @@ footer span{color:var(--gold)}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--cream)}
 ::-webkit-scrollbar-thumb{background:var(--rust);border-radius:10px}
-
-
-
