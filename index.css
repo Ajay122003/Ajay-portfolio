@@ -89,11 +89,28 @@ section:nth-child(even){background:var(--surface)}
 }
 #about::before{
   content:'AJAY';
-  position:absolute;right:-2rem;top:50%;transform:translateY(-50%);
+  position:absolute;right:2rem;top:50%;transform:translateY(-50%);
   font-family:'Syne',sans-serif;font-size:18vw;font-weight:800;
   color:rgba(124,45,18,.04);line-height:1;pointer-events:none;
   white-space:nowrap;
 }
+
+/* #about::before {
+  content: '';
+  position: absolute;
+  right: 24rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 520px;
+  height: 520px;
+  background-image: url('image/Ajay E.jpeg');
+  background-size: cover;
+  background-position: center top;
+  border-radius: 50%;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+} */
 .hero-chip{
   display:inline-flex;align-items:center;gap:.5rem;
   background:var(--rust);color:#fff;
