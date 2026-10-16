@@ -14,12 +14,12 @@ const navigationIcons = {
 export default function Sidebar({ activeSection, onNavigate }) {
   return (
     <aside className="fixed inset-y-0 left-0 z-30 hidden w-[258px] flex-col items-center overflow-y-auto bg-[#24352c] px-6 py-8 text-white lg:flex">
-      <a href="#about" aria-label="Ajay E home" className="mb-4 overflow-hidden rounded-full border-4 border-white/15">
-        <img src="/image/Ajay%20E.jpeg" alt="Ajay E" className="h-28 w-28 object-cover" />
+      <a href="#about" aria-label="Ajay E home" className="mb-4 h-36 w-36 shrink-0 overflow-hidden rounded-full border-4 border-white/15">
+        <img src="/image/Ajay%20E.jpeg" alt="Ajay E" className="block h-full w-full object-cover object-[center_20%]" />
       </a>
-      <h1 className="font-display text-xl font-extrabold">Ajay E.</h1>
+      <h1 className="font-display text-xl font-extrabold">Ajay E</h1>
       <p className="mt-1 flex items-center gap-1.5 text-xs text-white/60"><MapPin size={13} /> Coimbatore, India</p>
-      <p className="mb-7 mt-4 min-h-5 text-center text-xs font-medium text-white/80">Full Stack Developer</p>
+      <p className="mb-4 mt-4 min-h-5 text-center text-xs font-medium text-white/80">Full Stack Developer</p>
 
       <nav aria-label="Main navigation" className="w-full space-y-1">
         {navigation.map(({ id, label }) => {

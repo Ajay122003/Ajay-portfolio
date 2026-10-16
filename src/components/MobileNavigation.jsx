@@ -11,7 +11,7 @@ export default function MobileNavigation({ open, setOpen }) {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-30 flex h-16 items-center justify-between border-b border-line bg-paper/95 px-5 backdrop-blur lg:hidden">
-        <a href="#about" className="font-display text-lg font-extrabold text-ink">Ajay E.</a>
+        <a href="#about" className="font-display text-lg font-extrabold text-ink">Ajay E</a>
         <button type="button" onClick={() => setOpen(true)} aria-label="Open navigation" aria-expanded={open} className="rounded-lg p-2 text-ink hover:bg-black/5"><Menu size={23} /></button>
       </header>
       <div className={`fixed inset-0 z-40 bg-ink/45 transition-opacity lg:hidden ${open ? 'visible opacity-100' : 'invisible opacity-0'}`} onClick={() => setOpen(false)} aria-hidden="true" />

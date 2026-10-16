@@ -1,11 +1,11 @@
 import { ArrowDown, ArrowUpRight, Download } from 'lucide-react'
-import { resumeUrl } from '../data/portfolio.js'
+import { certifications, projects, resumeUrl, skills } from '../data/portfolio.js'
 import PortfolioAssistant from './PortfolioAssistant.jsx'
 
 const stats = [
-  { value: '5+', label: 'Projects built' },
-  { value: '15+', label: 'Technologies' },
-  { value: '5', label: 'Certifications' },
+  { value: `${projects.length}+`, label: 'Projects built' },
+  { value: `${skills.length}+`, label: 'Technologies' },
+  { value: `${certifications.length}`, label: 'Certifications' },
 ]
 
 export default function HeroSection() {
