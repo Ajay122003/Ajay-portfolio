@@ -22,6 +22,7 @@ export const internships = [
 export const workExperience = {
   title: 'Full Stack Developer',
   company: 'SaaSTrail Venture Studio',
+  startedAt: '2025-09-01',
   period: 'Sep 2025 - Present',
   location: 'Coimbatore, India',
   points: [
@@ -48,11 +49,14 @@ export const skills = [
   { name: 'HTML5', level: 90, icon: 'Code2' },
   { name: 'CSS3', level: 85, icon: 'PanelsTopLeft' },
   { name: 'JavaScript', level: 80, icon: 'Braces' },
+  { name: 'TypeScript', icon: 'TypeScript' },
   { name: 'React', level: 95, icon: 'Atom' },
   { name: 'Tailwind CSS', level: 85, icon: 'Wind' },
   { name: 'Python', level: 98, icon: 'Terminal' },
   { name: 'Django', level: 95, icon: 'Server' },
   { name: 'FastAPI', level: 90, icon: 'Zap' },
+  { name: 'Azure', icon: 'CloudCog' },
+  { name: 'Linux Server', icon: 'Linux' },
   { name: 'Next.js', level: 85, icon: 'Layers3' },
   { name: 'Vue.js', level: 75, icon: 'Component' },
   { name: 'MySQL', level: 78, icon: 'Database' },

@@ -1,14 +1,37 @@
 import { ArrowDown, ArrowUpRight, Download } from 'lucide-react'
-import { certifications, projects, resumeUrl, skills } from '../data/portfolio.js'
+import { certifications, projects, resumeUrl, skills, workExperience } from '../data/portfolio.js'
 import PortfolioAssistant from './PortfolioAssistant.jsx'
 
-const stats = [
-  { value: `${projects.length}+`, label: 'Projects built' },
-  { value: `${skills.length}+`, label: 'Technologies' },
-  { value: `${certifications.length}`, label: 'Certifications' },
-]
+function getExperienceDuration(startDate, now = new Date()) {
+  const [year, month, day] = startDate.split('-').map(Number)
+  const start = new Date(year, month - 1, day)
+  let months = (now.getFullYear() - start.getFullYear()) * 12
+    + now.getMonth()
+    - start.getMonth()
+
+  if (now.getDate() < start.getDate()) months -= 1
+
+  months = Math.max(months, 0)
+  const years = Math.floor(months / 12)
+  const remainingMonths = months % 12
+
+  if (years === 0 && remainingMonths === 0) return '<1 mo'
+
+  return [
+    years > 0 && `${years} yr${years === 1 ? '' : 's'}`,
+    remainingMonths > 0 && `${remainingMonths} mo`,
+  ].filter(Boolean).join(' ')
+}
 
 export default function HeroSection() {
+  const experienceDuration = getExperienceDuration(workExperience.startedAt)
+  const stats = [
+    { value: `${projects.length}+`, label: 'Projects built' },
+    { value: `${skills.length}+`, label: 'Technologies' },
+    { value: `${certifications.length}`, label: 'Certifications' },
+    { value: experienceDuration, label: 'Experience' },
+  ]
+
   return (
     <section id="about" className="relative flex min-h-[calc(100svh-4rem)] scroll-mt-16 items-center overflow-hidden px-5 py-16 sm:px-9 lg:min-h-screen lg:px-14 lg:py-20">
       <div className="pointer-events-none absolute -right-20 top-20 h-80 w-80 rounded-full border border-[#9f3c27]/10 sm:right-0" />

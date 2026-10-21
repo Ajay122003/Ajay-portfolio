@@ -14,6 +14,20 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('about')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const replaySectionAnimation = (event) => {
+    if (!(event.target instanceof Element)) return
+
+    const anchor = event.target.closest('a[href^="#"]')
+    const section = anchor
+      ? document.getElementById(anchor.hash.slice(1))
+      : event.target.closest('main section[id]') || document.getElementById(activeSection)
+
+    if (!section?.matches('main section[id]')) return
+    section.classList.remove('is-click-animated')
+    void section.offsetWidth
+    section.classList.add('is-click-animated')
+  }
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -28,7 +42,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-paper text-ink">
+    <div className="min-h-screen bg-paper text-ink" onClickCapture={replaySectionAnimation}>
       <Sidebar activeSection={activeSection} />
       <MobileNavigation open={mobileMenuOpen} setOpen={setMobileMenuOpen} />
       <main className="pt-16 lg:ml-[258px] lg:pt-0">
