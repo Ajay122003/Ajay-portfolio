@@ -19,6 +19,7 @@ export default function ProjectsSection() {
               <h3 className="mt-2 font-display text-lg font-bold text-ink">{project.title}</h3>
               <p className="mt-2 min-h-[4.5rem] text-sm leading-6 text-muted">{project.description}</p>
               {project.href ? <a href={project.href} target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-ink transition group-hover:text-rust">View repository <ExternalLink size={14} /></a> : <span className="mt-4 inline-flex items-center gap-2 text-xs font-medium text-muted">Repository link unavailable <ArrowUpRight size={14} /></span>}
+              {project.link ? <a href={project.link} target="_blank" rel="noreferrer" className="mt-4 ms-2 inline-flex items-center gap-2 text-xs font-bold text-ink transition group-hover:text-rust">View Project <ExternalLink size={14} /></a> : <span className="mt-4 ms-2 inline-flex items-center gap-2 text-xs font-medium text-muted">link unavailable <ArrowUpRight size={14} /></span>}
             </div>
           </article>)}
         </div>

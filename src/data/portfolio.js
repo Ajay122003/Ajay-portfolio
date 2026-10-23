@@ -37,7 +37,7 @@ export const workExperience = {
 }
 
 export const projects = [
-  { title: 'LUVARA- Ecommerce Website', category: 'React · Django REST · PostgreSQL', image: '/image/Project6.png', description: 'A digital menu and order management system where customers can browse, place orders, and track meals.', href: 'https://github.com/Ajay122003/Fashion-luvara-client', tone: 'from-[#a4452d] to-[#d58a4d]' },
+  { title: 'LUVARA- Ecommerce Website', category: 'React · Django REST · PostgreSQL', image: '/image/Project6.png', description: 'A digital menu and order management system where customers can browse, place orders, and track meals.', href: 'https://github.com/Ajay122003/Fashion-luvara-client',  link: "https://luvarastore.com/" , tone: 'from-[#a4452d] to-[#d58a4d]' },
   { title: 'Smart Restaurant Ordering System', category: 'React · Django · MySQL', image: '/image/Project1.jpg', description: 'A digital menu and order management system where customers can browse, place orders, and track meals.', href: 'https://github.com/Ajay122003/Smart-Restaurant-Ordering-System', tone: 'from-[#a4452d] to-[#d58a4d]' },
   { title: 'Fashion E-commerce Platform', category: 'JavaScript · HTML · CSS', image: '/image/Project2.jpg', description: 'A responsive fashion storefront with a product catalogue, cart management, filters, and search.', href: null, tone: 'from-[#536e5d] to-[#97a477]' },
   { title: 'BloodLink: Blood Bank Finder', category: 'Python · Django REST · React', image: '/image/Project3.png', description: 'A location-based blood bank finder with blood-group filters, availability details, and contact information.', href: 'https://github.com/Ajay122003/BloodLink-Blood-Bank-Finder', tone: 'from-[#9e3d3c] to-[#d37b60]' },
@@ -85,3 +85,5 @@ export const socialLinks = {
 }
 
 export const resumeUrl = '/image/AJAY%20E%20new%20resume.pdf'
+
+
