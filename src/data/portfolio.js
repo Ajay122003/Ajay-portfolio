@@ -46,23 +46,26 @@ export const projects = [
 ]
 
 export const skills = [
-  { name: 'HTML5', level: 90, icon: 'Code2' },
-  { name: 'CSS3', level: 85, icon: 'PanelsTopLeft' },
-  { name: 'JavaScript', level: 80, icon: 'Braces' },
-  { name: 'TypeScript', icon: 'TypeScript' },
-  { name: 'React', level: 95, icon: 'Atom' },
-  { name: 'Tailwind CSS', level: 85, icon: 'Wind' },
-  { name: 'Python', level: 98, icon: 'Terminal' },
-  { name: 'Django', level: 95, icon: 'Server' },
-  { name: 'FastAPI', level: 90, icon: 'Zap' },
-  { name: 'Azure', icon: 'CloudCog' },
-  { name: 'Linux Server', icon: 'Linux' },
-  { name: 'Next.js', level: 85, icon: 'Layers3' },
-  { name: 'Vue.js', level: 75, icon: 'Component' },
-  { name: 'MySQL', level: 78, icon: 'Database' },
-  { name: 'Git & GitHub', level: 90, icon: 'GitBranch' },
-  { name: 'REST APIs', level: 85, icon: 'CloudCog' },
-  { name: 'MCP', level: 85, icon: 'Workflow' },
+  { name: 'HTML5', level: 90, icon: 'Code2', categories: ['frontend'] },
+  { name: 'CSS3', level: 85, icon: 'PanelsTopLeft', categories: ['frontend'] },
+  { name: 'JavaScript', level: 80, icon: 'Braces', categories: ['frontend'] },
+  { name: 'TypeScript', icon: 'TypeScript', categories: ['frontend'] },
+  { name: 'React', level: 95, icon: 'Atom', categories: ['frontend', 'full-stack'] },
+  { name: 'Tailwind CSS', level: 85, icon: 'Wind', categories: ['frontend'] },
+  { name: 'Python', level: 98, icon: 'Terminal', categories: ['backend', 'full-stack'] },
+  { name: 'Django', level: 95, icon: 'Server', categories: ['backend', 'full-stack'] },
+  { name: 'FastAPI', level: 90, icon: 'Zap', categories: ['backend', 'full-stack'] },
+  { name: 'Docker', level: 80, icon: 'Container', categories: ['devops'] },
+  { name: 'Nginx', level: 75, icon: 'Network', categories: ['devops'] },
+  { name: 'Azure', icon: 'CloudCog', categories: ['devops'] },
+  { name: 'Linux Server', icon: 'Linux', categories: ['devops'] },
+  { name: 'Next.js', level: 85, icon: 'Layers3', categories: ['frontend'] },
+  { name: 'Vue.js', level: 75, icon: 'Component', categories: ['frontend'] },
+  { name: 'MySQL', level: 78, icon: 'Database', categories: ['backend', 'full-stack'] },
+  { name: 'PostgreSQL', icon: 'Database', categories: ['backend', 'full-stack'] },
+  { name: 'Git & GitHub', level: 90, icon: 'GitBranch', categories: ['devops'] },
+  { name: 'REST APIs', level: 85, icon: 'CloudCog', categories: ['backend', 'full-stack'] },
+  { name: 'MCP', level: 85, icon: 'Workflow', categories: ['backend'] },
 ]
 
 export const certifications = [
@@ -85,5 +88,3 @@ export const socialLinks = {
 }
 
 export const resumeUrl = '/image/AJAY%20E%20new%20resume.pdf'
-
-
